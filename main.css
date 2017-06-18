@@ -1,0 +1,92 @@
+img {
+  width: 100%; }
+
+.quote-icon {
+  font-size: 10px;
+  vertical-align: top;
+  color: green;
+  opacity: .5; }
+
+.review-block {
+  display: flex;
+  width: 400px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #fcc; }
+  .review-block.rate-5 .avatar-wrap {
+    box-shadow: 0 0 3px 3px #fff, 0 0 4px 4px #19a348; }
+  .review-block.rate-4 .avatar-wrap {
+    box-shadow: 0 0 3px 3px #fff, 0 0 4px 4px #6ca541; }
+  .review-block.rate-3 .avatar-wrap {
+    box-shadow: 0 0 3px 3px #fff, 0 0 4px 4px #f6ca19; }
+  .review-block.rate-2 .avatar-wrap {
+    box-shadow: 0 0 3px 3px #fff, 0 0 4px 4px #f16e24; }
+  .review-block.rate-1 .avatar-wrap {
+    box-shadow: 0 0 3px 3px #fff, 0 0 4px 4px #dd1e25; }
+  .review-block .avatar-wrap {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden; }
+
+.review-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .review-details .body {
+    text-indent: 1em;
+    text-align: justify;
+    line-height: 1.4;
+    color: #777777;
+    font-weight: 200;
+    /* letter-spacing: 1px; */
+    font-size: 13px;
+    transition: all .3s ease-in; }
+  .review-details.body-collapsed .body {
+    font-size: 0; }
+  .review-details .title {
+    text-align: center;
+    color: #484848;
+    font-size: 13px; }
+  .review-details .more-less {
+    font-size: 11px;
+    color: #a3a3a3; }
+    .review-details .more-less .fa {
+      animation: arrow-down 2s infinite; }
+
+.rating-wrap {
+  width: 70px; }
+
+.user-details {
+  text-align: center;
+  margin-bottom: 10px; }
+  .user-details .fullname {
+    font-size: 12px; }
+  .user-details .location {
+    font-size: 10px;
+    color: #adadad;
+    font-style: italic; }
+
+@keyframes arrow-down {
+  50% {
+    transform: translateY(5px); }
+  100% {
+    transform: translateY(0); } }
+
+tp-widget {
+  font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column; }
+  tp-widget .powered {
+    display: flex;
+    justify-content: center; }
+    tp-widget .powered .wrap {
+      width: 120px;
+      font-size: 8px;
+      color: #fcc26c;
+      text-align: right; }

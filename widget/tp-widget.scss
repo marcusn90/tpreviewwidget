@@ -1,0 +1,22 @@
+@import './vars';
+@import './widget-item/tp-widget-item.scss';
+
+tp-widget {
+    font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+    .powered {
+        display: flex;
+        justify-content: center;
+
+        .wrap {
+            width: 120px;
+            font-size: 8px;
+            color: #fcc26c;
+            text-align: right;
+        }
+    }
+}

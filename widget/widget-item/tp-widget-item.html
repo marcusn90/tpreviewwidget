@@ -1,0 +1,28 @@
+<div class="review-block rate-{{$ctrl.item.starRating}}">
+    <div class="avatar-wrap">
+        <img ng-src="{{ $ctrl.getAvatarUrl() }}" alt="">
+    </div>
+    <div class="rating-wrap">
+        <img ng-src="{{ 'static-images/star-' + $ctrl.item.starRating + '.png' }}" alt="">
+    </div>
+    <div class="user-details">
+        <div class="fullname"><span>{{$ctrl.item.fullName}}</span></div>
+        <div class="location" ng-if="$ctrl.item.location">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            <span>{{$ctrl.item.location}}</span></div>
+    </div>
+    <div class="review-details" ng-class="{ 'body-collapsed': $ctrl.bodyCollapsed }">
+        <div class="title">
+            <i class="fa fa-quote-left quote-icon" aria-hidden="true"></i>
+            <cite>{{ $ctrl.item.reviewTitle}}</cite> 
+        </div>
+
+        <div class="body">
+            <p class="">{{ $ctrl.item.reviewBody }}</p>
+        </div>
+
+        <a href="" class="more-less" ng-click="$ctrl.bodyToggle()">
+            <i class="fa" ng-class="{'fa-angle-double-down': $ctrl.bodyCollapsed, 'fa-angle-double-up': !$ctrl.bodyCollapsed}" aria-hidden="true"></i>
+        </a>
+    </div>
+</div>

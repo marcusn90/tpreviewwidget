@@ -1,0 +1,122 @@
+img {
+    width: 100%;
+}
+
+.quote-icon {
+    font-size: 10px;
+    vertical-align: top;
+    color: green;
+    opacity: .5;
+}
+
+.review-block {
+    display: flex;
+    width: 400px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #fcc;
+
+    &.rate-5 {
+        .avatar-wrap {
+            box-shadow: 0 0 3px 3px #fff, 0 0 4px 4px $rate5color;
+        }
+    }
+
+    &.rate-4 {
+        .avatar-wrap {
+            box-shadow: 0 0 3px 3px #fff, 0 0 4px 4px $rate4color;
+        }
+    }
+
+    &.rate-3 {
+        .avatar-wrap {
+            box-shadow: 0 0 3px 3px #fff, 0 0 4px 4px $rate3color;
+        }
+    }
+
+    &.rate-2 {
+        .avatar-wrap {
+            box-shadow: 0 0 3px 3px #fff, 0 0 4px 4px $rate2color;
+        }
+    }
+
+    &.rate-1 {
+        .avatar-wrap {
+            box-shadow: 0 0 3px 3px #fff, 0 0 4px 4px $rate1color;
+        }
+    }
+
+    .avatar-wrap {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+}
+
+.review-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .body {
+        text-indent: 1em;
+        text-align: justify;
+        line-height: 1.4;
+        color: #777777;
+        font-weight: 200;
+        /* letter-spacing: 1px; */
+        font-size: 13px;
+        transition: all .3s ease-in;
+    }
+
+    &.body-collapsed {
+        .body {
+            font-size: 0;
+        }
+    }
+
+    .title {
+        text-align: center;
+        color: rgb(72, 72, 72);
+        font-size: 13px;
+    }
+
+    .more-less {
+        font-size: 11px;
+        color: #a3a3a3;
+
+        .fa {
+            animation: arrow-down 2s infinite;
+        }
+    }
+}
+
+
+.rating-wrap {
+    width: 70px;
+}
+
+.user-details {
+    text-align: center;
+    margin-bottom: 10px;
+
+
+    .fullname {
+        font-size: 12px;
+    }
+
+    .location {
+        font-size: 10px;
+        color: #adadad;
+        font-style: italic;
+    }
+}
+
+@keyframes arrow-down {
+  50%  { transform: translateY(5px)}
+  100% { transform: translateY(0) }
+}
